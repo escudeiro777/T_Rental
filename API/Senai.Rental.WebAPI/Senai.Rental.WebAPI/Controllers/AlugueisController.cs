@@ -50,7 +50,7 @@ namespace Senai.Rental.WebAPI.Controllers
             return StatusCode(201);
         }
 
-        [HttpDelete]
+        [HttpDelete("excluir/{id}")]
         public IActionResult Delete(int id)
         {
             _aluguelRepository.Deletar(id);
